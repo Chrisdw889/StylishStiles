@@ -15,7 +15,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.weaverfever.stylishstiles.item.ModCreativeModeTabs;
+import net.weaverfever.stylishstiles.block.ModBlocks;
 import net.weaverfever.stylishstiles.item.ModItems;
 import org.slf4j.Logger;
 
@@ -31,7 +31,7 @@ public class StylishStiles {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
-        ModCreativeModeTabs.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -52,7 +52,9 @@ public class StylishStiles {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.OAK_STILE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
