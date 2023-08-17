@@ -56,6 +56,7 @@ public class StylishStiles {
             event.accept(ModBlocks.MANGROVE_STILE);
             event.accept(ModBlocks.BAMBOO_STILE);
             event.accept(ModBlocks.CHERRY_STILE);
+            event.accept(ModBlocks.NETHER_BRICK_STILE);
         }
     }
 }
