@@ -40,6 +40,8 @@ public class ModBlocks {
             () -> new Stile(BlockBehaviour.Properties.copy(Blocks.BAMBOO_FENCE)));
     public static final RegistryObject<Block> CHERRY_STILE = registerBlock("cherry_stile",
             () -> new Stile(BlockBehaviour.Properties.copy(Blocks.CHERRY_FENCE)));
+    public static final RegistryObject<Block> NETHER_BRICK_STILE = registerBlock("nether_brick_stile",
+            () -> new Stile(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_FENCE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
