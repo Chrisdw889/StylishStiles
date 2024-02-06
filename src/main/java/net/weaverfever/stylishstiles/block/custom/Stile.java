@@ -1,19 +1,5 @@
 package net.weaverfever.stylishstiles.block.custom;
 
-//import net.minecraft.core.BlockPos;
-//import net.minecraft.world.item.context.BlockPlaceContext;
-//import net.minecraft.world.level.BlockGetter;
-//import net.minecraft.world.level.block.Block;
-//import net.minecraft.world.level.block.FenceBlock;
-//import net.minecraft.world.level.block.state.BlockState;
-//import net.minecraft.world.level.block.state.StateDefinition;
-//import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-//import net.minecraft.world.level.block.state.properties.DirectionProperty;
-//import net.minecraft.world.phys.shapes.BooleanOp;
-//import net.minecraft.world.phys.shapes.CollisionContext;
-//import net.minecraft.world.phys.shapes.Shapes;
-//import net.minecraft.world.phys.shapes.VoxelShape;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FenceBlock;
@@ -43,7 +29,6 @@ public class Stile extends FenceBlock {
 
     @Override
     public BlockState getStateForPlacement(BlockItemUseContext pContext) {
-        // Fix to get the horizontal facing only
         return super.getStateForPlacement(pContext).with(FACING, pContext.getPlacementHorizontalFacing().getOpposite());
     }
 
