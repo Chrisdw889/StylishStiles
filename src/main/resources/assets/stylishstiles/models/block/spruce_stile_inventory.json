@@ -1,0 +1,6 @@
+{
+  "parent": "stylishstiles:block/fence_post_stile_inventory",
+  "textures": {
+    "texture": "minecraft:block/spruce_planks"
+  }
+}

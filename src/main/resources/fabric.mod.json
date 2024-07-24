@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "stylishstiles",
+	"version": "${version}",
+	"name": "StylishStiles",
+	"description": "Adds the new Stile block for getting over fences!",
+	"authors": [
+		"WeaverFever"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/stylishstiles/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.weaverfever.stylishstiles.StylishStiles"
+		],
+		"client": [
+			"net.weaverfever.stylishstiles.StylishStilesClient"
+		],
+		"fabric-datagen": [
+			"net.weaverfever.stylishstiles.StylishStilesDataGenerator"
+		]
+	},
+	"mixins": [
+		"stylishstiles.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
