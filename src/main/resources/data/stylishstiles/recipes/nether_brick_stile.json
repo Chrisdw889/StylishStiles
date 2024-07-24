@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_stile",
+  "key": {
+    "#": {
+      "item": "minecraft:nether_brick"
+    },
+    "W": {
+      "item": "minecraft:nether_bricks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "W#W"
+  ],
+  "result": {
+    "id": "stylishstiles:nether_brick_stile"
+  },
+  "show_notification": true
+}

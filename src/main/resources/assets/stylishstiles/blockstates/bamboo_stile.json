@@ -1,0 +1,75 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "stylishstiles:block/bamboo_stile"
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "stylishstiles:block/bamboo_stile",
+        "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "stylishstiles:block/bamboo_stile",
+        "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "stylishstiles:block/bamboo_stile",
+        "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/bamboo_fence_side_north",
+        "uvlock": true
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/bamboo_fence_side_east",
+        "uvlock": true
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/bamboo_fence_side_south",
+        "uvlock": true
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/bamboo_fence_side_west",
+        "uvlock": true
+      },
+      "when": {
+        "west": "true"
+      }
+    }
+  ]
+}
