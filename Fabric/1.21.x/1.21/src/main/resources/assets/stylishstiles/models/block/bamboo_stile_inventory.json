@@ -1,0 +1,6 @@
+{
+  "parent": "stylishstiles:block/custom_fence_post_stile_inventory",
+  "textures": {
+    "texture": "minecraft:block/bamboo_fence"
+  }
+}

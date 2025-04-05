@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_stile",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "minecraft:acacia_planks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "W#W"
+  ],
+  "result": {
+    "id": "stylishstiles:acacia_stile"
+  },
+  "show_notification": true
+}
