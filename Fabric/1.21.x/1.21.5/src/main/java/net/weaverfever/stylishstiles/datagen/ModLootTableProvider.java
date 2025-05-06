@@ -15,5 +15,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.OAK_STILE);
+        addDrop(ModBlocks.ACACIA_STILE);
+        addDrop(ModBlocks.DARK_OAK_STILE);
+        addDrop(ModBlocks.SPRUCE_STILE);
+        addDrop(ModBlocks.BIRCH_STILE);
+        addDrop(ModBlocks.JUNGLE_STILE);
+        addDrop(ModBlocks.CRIMSON_STILE);
+        addDrop(ModBlocks.WARPED_STILE);
+        addDrop(ModBlocks.MANGROVE_STILE);
+        addDrop(ModBlocks.BAMBOO_STILE);
+        addDrop(ModBlocks.CHERRY_STILE);
+        addDrop(ModBlocks.PALE_OAK_STILE);
+
+        addDrop(ModBlocks.NETHER_BRICK_STILE);
     }
 }
