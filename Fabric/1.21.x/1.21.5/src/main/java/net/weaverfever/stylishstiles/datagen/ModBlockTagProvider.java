@@ -15,13 +15,26 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-//        getOrCreateTagBuilder(BlockTags.FENCES)
-//                .add(ModBlocks.OAK_STILE);
-
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .setReplace(false)
-                .add(ModBlocks.OAK_STILE);
-        // Adds Mod blocks to the pickaxe mineable block tags
-//        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.INSERT MOD BLOCK)
+                .add(ModBlocks.OAK_STILE)
+                .add(ModBlocks.ACACIA_STILE)
+                .add(ModBlocks.DARK_OAK_STILE)
+                .add(ModBlocks.SPRUCE_STILE)
+                .add(ModBlocks.BIRCH_STILE)
+                .add(ModBlocks.JUNGLE_STILE)
+                .add(ModBlocks.CRIMSON_STILE)
+                .add(ModBlocks.WARPED_STILE)
+                .add(ModBlocks.MANGROVE_STILE)
+                .add(ModBlocks.BAMBOO_STILE)
+                .add(ModBlocks.CHERRY_STILE)
+                .add(ModBlocks.PALE_OAK_STILE);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .setReplace(false)
+                .add(ModBlocks.NETHER_BRICK_STILE);
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.NETHER_BRICK_STILE);
     }
 }
